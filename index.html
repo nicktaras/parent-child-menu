@@ -64,12 +64,12 @@
                 <div>
                     Menu
                 </div>
-                <ul>
-                <li>
+                <ul role="menubar">
+                <li role="menuitem" aria-hidden="false">
                     Devcon Not Connected
                     <button aria-haspopup="true">Connect</button>
                 </li>
-                <li class="has-submenu">
+                <li class="has-submenu" role="menuitem">
                     Devcon Connected
                     <button onclick="opn()" aria-haspopup="true" aria-expanded="true" aria-controls="token-list-tn" aria-haspopup="true">View Tokens</button>
                 </li>
@@ -79,20 +79,9 @@
                 <button onclick="opn()" aria-haspopup="true" aria-expanded="true" aria-controls="token-list-tn" aria-haspopup="true">
                    < Back
                 </button>
-                <ul id="token-list-tn">
-                    <li>Token A</li>
-                    <li>Token B</li>
-                    <li>Token C</li>
-                    <li>Token D</li>
-                    <li>Token D</li>
-                    <li>Token D</li>
-                    <li>Token D</li>
-                    <li>Token D</li>
-                    <li>Token D</li>
-                    <li>Token D</li>
-                    <li>Token D</li>
-                    <li>Token D</li>
-                    <li>Token D</li>
+                <ul id="token-list-tn" role="menu">
+                    <li role="menuitem">Token A</li>
+                    <li role="menuitem">Token B</li>
                 </ul>
             </div>
         </div>
